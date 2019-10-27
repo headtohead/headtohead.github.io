@@ -10,11 +10,11 @@
   "homepage": "https://headtohead.github.io/en",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp -r ./build ./en && rm -r build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "get-version": "node -p \"require('./package.json').version\"",
-    "deploy": "npm run build && mv build en && git add en && git commit -m \"Build $(npm run --silent get-version)\" && git push origin master"
+    "deploy": "npm run build && git add en && git commit -m \"Build $(npm run --silent get-version)\" && git push origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
