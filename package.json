@@ -7,12 +7,13 @@
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"
   },
-  "homepage": "https://headtohead.github.io/build",
+  "homepage": "https://headtohead.github.io/en",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && mv build en && git add build && git push origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
