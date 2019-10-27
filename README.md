@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Development notes
+```
+~make src changes~
+git add src
+git commit -m "meaningful commit message"
+npm version prerelease|patch|minor|major
+npm run deploy
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
