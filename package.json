@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && mv build en && git add build && git push origin master"
+    "deploy": "npm run build && mv build en && git add en && git push origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
